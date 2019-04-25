@@ -1,13 +1,14 @@
 //Sir the solution was done in dev c++ so if you run it in ubuntu just use the stdio header file thankyou and it works for both the questions
 #include<stdio.h>
 using namespace std;
-int main()
-{
- int n;   
+int n;   
  int r;      
  int i,j,k;
  int need[10][10],alloc[10][10],max[10][10];
  int avail[10],p[10];
+int main()
+{
+ 	
   printf("\nEnter number of process :");
  scanf("%d",&n);
  printf("\n Enter  resources available : ");
