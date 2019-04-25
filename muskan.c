@@ -1,7 +1,6 @@
-
-#include<iostream>
-#include<stdo.h>
-using namespace std
+//Sir the solution was done in dev c++ so if you run it in ubuntu just use the stdio header file thankyou and it works for both the questions
+#include<stdio.h>
+using namespace std;
 int main()
 {
  int n;   
@@ -17,9 +16,9 @@ int main()
  for(i=0;i<r;i++)
  {  printf("R%d ",i+1);
   scanf("%d",&avail[i]);
-  
+  }
  printf("\n Enter allocation matrix  \n");
- for(i=0;i<n;i)
+ for(i=0;i<n;i++)
  {
  printf("p%d",i+1);          p[i]=0;
  for(j=0;j<r;j++)
@@ -29,7 +28,7 @@ int main()
 }
   printf("\n Enter MAX matrix  \n");
 
- for(i=0;i<n i++)
+ for(i=0;i<n;i++)
  {
  printf("p%d",i+1);
  for(j=0;j<r;j++)
