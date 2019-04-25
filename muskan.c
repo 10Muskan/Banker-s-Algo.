@@ -18,13 +18,13 @@ int main()
  	printf("\nEnter instances for resources :\n");
  	for(i=0;i<r;i++)
  	{
-		printf("R%d ",i+1);
+		printf("\nR : %d ",i+1);
   		scanf("%d",&avail[i]);
   	}
  	printf("\n Enter allocation matrix  \n");
  	for(i=0;i<n;i++)
  	{
- 		printf("p%d",i+1);
+ 		printf("\nP : %d",i+1);
           	p[i]=0;
  		for(j=0;j<r;j++)
  		{
@@ -34,7 +34,7 @@ int main()
   	printf("\n Enter MAX matrix  \n");
 	for(i=0;i<n;i++)
  	{
- 		printf("p%d",i+1);
+ 		printf("\nP : %d",i+1);
  		for(j=0;j<r;j++)
  		{
   			scanf("%d",&max[i][j]);
@@ -43,11 +43,11 @@ int main()
 
  	for(i=0;i<n;i++)
  	{
- 		printf("\np%d\t",i+1) ;
+ 		printf("\nP : %d\t",i+1);
  		for(j=0;j<r;j++)
  		{
   			need[i][j]=max[i][j]-alloc[i][j];
-  			printf("\t%d",need[i][j]);
+  			printf("\n\t%d",need[i][j]);
   		}
  	}
  
@@ -63,7 +63,7 @@ int main()
 		} 
 	} 
 	if(flag==0) 
-		printf("Unsafe State"); 
+		printf("\nUnsafe State"); 
 	else 
-		printf("Safe State");
+		printf("\nSafe State");
 }
